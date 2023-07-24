@@ -9,7 +9,7 @@ function Users() {
   const [mahasiswa, setMahasiswa] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/mahasiswa/${id}`).then((res) => {
+    axios.get(`https://proyek-backend-fay5.vercel.app/mahasiswa/${id}`).then((res) => {
       console.log('data', res.data)
       setMahasiswa(res.data);
       console.log('mahasiswa ', mahasiswa)

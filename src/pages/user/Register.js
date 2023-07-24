@@ -15,7 +15,7 @@ function Register() {
   function submitForm(e) {
     e.preventDefault();
 
-    axios.post("http://localhost:3001/register", data)
+    axios.post("https://proyek-backend-fay5.vercel.app/register", data)
       .then(() => {
         alert("Registration successful!");
         navigate("/login");

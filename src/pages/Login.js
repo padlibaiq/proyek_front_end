@@ -15,7 +15,7 @@ const Login = () => {
       password
     };
 
-    axios.post('http://localhost:3001/login', data)
+    axios.post('https://proyek-backend-fay5.vercel.app/login', data)
       .then((response) => {
         // Periksa respons dari permintaan POST /login
         if (response.data) {

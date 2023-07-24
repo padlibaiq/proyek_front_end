@@ -12,7 +12,7 @@ function Home() {
   }, []);
 
   function loadUsers() {
-    axios.get("http://localhost:3001/mahasiswa").then((res) => {
+    axios.get("https://proyek-backend-fay5.vercel.app/mahasiswa").then((res) => {
       setUsers(res.data.reverse());
       console.log(res.data.reverse())
     });
@@ -21,7 +21,7 @@ function Home() {
   function deleteUser(id) {
     console.log(id)
 
-    axios.delete(`http://localhost:3001/mahasiswa/${id}`).then(() => {
+    axios.delete(`https://proyek-backend-fay5.vercel.app/mahasiswa/${id}`).then(() => {
       loadUsers();
     });
   }

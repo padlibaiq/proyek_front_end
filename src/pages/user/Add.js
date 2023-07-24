@@ -20,7 +20,7 @@ function Add() {
     e.preventDefault();
 
 
-    axios.post("http://localhost:3001/mahasiswa", data)
+    axios.post("https://proyek-backend-fay5.vercel.app/mahasiswa", data)
       .then(() => {
         alert("Data submitted successfully!");
         navigate("/home");

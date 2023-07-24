@@ -12,7 +12,7 @@ function Edit() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/mahasiswa/${id}`)
+      .get(`https://proyek-backend-fay5.vercel.app/mahasiswa/${id}`)
       .then((res) => {
         const data = res.data;
         if (data.length > 0) {
@@ -39,7 +39,7 @@ function Edit() {
       departemen,
     };
     axios
-      .put(`http://localhost:3001/mahasiswa/${id}`, data)
+      .put(`https://proyek-backend-fay5.vercel.app/mahasiswa/${id}`, data)
       .then(() => navigate("/home"))
       .catch((error) => console.error(error));
   }
